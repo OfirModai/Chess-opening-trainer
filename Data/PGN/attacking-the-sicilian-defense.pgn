@@ -1,0 +1,110 @@
+[Event "Attacking the Sicilian defense: intro"]
+[Site "https://lichess.org/study/ofgURgbO/RAyH3vIr"]
+[Result "*"]
+[UTCDate "2023.12.20"]
+[UTCTime "11:11:51"]
+[Variant "Standard"]
+[ECO "B20"]
+[Opening "Sicilian Defense"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[ChapterMode "gamebook"]
+
+1. e4 c5 *
+
+
+[Event "Attacking the Sicilian defense: Main trap"]
+[Site "https://lichess.org/study/ofgURgbO/0zhFsoG4"]
+[Result "*"]
+[UTCDate "2023.10.21"]
+[UTCTime "14:19:10"]
+[Variant "Standard"]
+[ECO "B50"]
+[Opening "Sicilian Defense: Modern Variations"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[FEN "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+{ [%cal Gg1f3] }
+1. Nf3 d6 { [%cal Gf1c4] } 2. Bc4 { this is the plan in this study } 2... Nf6 3. e5 dxe5 4. Nxe5 { [%cal Gc4f7] } 4... e6 5. Qe2! Nbd7?? 6. Nxf7 Kxf7 7. Qxe6+ Kg6 8. h4 h5 9. Bd3+ Kh6 10. Qe3+ *
+
+
+[Event "Attacking the Sicilian defense: If black plays Be7 instead of Nbd7"]
+[Site "https://lichess.org/study/ofgURgbO/hsmwIt0c"]
+[Result "*"]
+[UTCDate "2023.10.21"]
+[UTCTime "14:29:43"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[FEN "rnbqkb1r/pp3ppp/4pn2/2p1N3/2B5/8/PPPPQPPP/RNB1K2R b KQkq - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1... Be7 2. O-O O-O 3. Re1! a6 4. a4 Nbd7 (4... Qc7 5. b3! { Prepare place for the dark-squared bishop to attack in the kingside } 5... Nbd7 6. Nxf7 Rxf7 7. Qxe6) 5. Nxf7 Rxf7 6. Qxe6 Qf8 7. Qxe7 Qxe7 8. Rxe7 *
+
+
+[Event "Attacking the Sicilian defense: 3.e6 and 7.Bd6"]
+[Site "https://lichess.org/study/ofgURgbO/IZhKPVid"]
+[Result "*"]
+[UTCDate "2023.10.21"]
+[UTCTime "14:41:09"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[FEN "rnbqkbnr/pp2pppp/3p4/2p5/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 2"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+2... e6 3. Qe2 { Active play and may transposed to seen variation } 3... Nf6 4. e5 dxe5 5. Nxe5 { transposed } 5... Bd6 (5... a6 6. a4) (5... Nc6 6. Nxc6) 6. O-O O-O 7. f4! { Because of the Sicilian pawn, the diagonal is not too dangerous } { [%cal Gb2b3,Gc1b2,Ga2a4,Gb1a3] } *
+
+
+[Event "Attacking the Sicilian defense: 2.Nc6"]
+[Site "https://lichess.org/study/ofgURgbO/9wfbzbPg"]
+[Result "*"]
+[UTCDate "2023.10.23"]
+[UTCTime "16:19:14"]
+[Variant "Standard"]
+[ECO "B30"]
+[Opening "Sicilian Defense: Old Sicilian"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[FEN "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 1"]
+[SetUp "1"]
+
+1... Nc6 2. c3 e5 (2... g6 3. d4 cxd4 4. cxd4 Bg7) (2... d6 3. d4 cxd4 4. cxd4 Nf6 5. Nc3) (2... Nf6 3. e5 Nd5 4. d4 cxd4 5. cxd4) (2... d5 3. exd5 Qxd5 4. d4 Bg4 5. Be2) 3. Bc4 Nf6 (3... Qc7 4. O-O Nf6 5. Ng5 Nd8 6. f4 h6 7. Nf3) (3... Be7 4. d4 cxd4 5. cxd4 exd4 6. Nxd4 Nf6 7. Nc3) 4. Ng5 d5 5. exd5 Nxd5 6. Qh5 g6 7. Qf3 Qxg5 8. Bxd5 *
+
+
+[Event "Attacking the Sicilian defense: 2.Nc6 3.e6 4.cxd4"]
+[Site "https://lichess.org/study/ofgURgbO/J9Phitu1"]
+[Result "*"]
+[UTCDate "2023.10.21"]
+[UTCTime "14:36:20"]
+[Variant "Standard"]
+[ECO "?"]
+[Opening "?"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[FEN "r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+1. c3 e6 2. d4 cxd4 3. cxd4 Bb4+ (3... d5 4. e5 Bb4+ 5. Nc3 { Bd2 leads to defending positions }) (3... Nf6 4. Nc3 Bb4 5. Bd3) 4. Nc3 Nf6 5. Bd3 d5 6. e5 Ne4 7. Qc2! { keep the light-squared bishop } 7... Qa5 8. O-O! { give up the pawn to stay active } 8... Nxc3 9. bxc3 Bxc3 10. Rb1 *
+
+
+[Event "Attacking the Sicilian defense: 2.Nc6 3.e6 4.d5"]
+[Site "https://lichess.org/study/ofgURgbO/EscJ9sO9"]
+[Result "*"]
+[UTCDate "2023.10.23"]
+[UTCTime "16:11:40"]
+[Variant "Standard"]
+[ECO "C02"]
+[Opening "French Defense: Advance Variation, Paulsen Attack"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[FEN "r1bqkbnr/pp1p1ppp/2n1p3/2p5/3PP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 3"]
+[SetUp "1"]
+[ChapterMode "gamebook"]
+
+3... d5 4. e5 Qb6 5. Be2! { Bd3 undefend the d4 pawn and lead to unpleasant result } 5... cxd4 6. cxd4 Nge7 7. Na3! { The Knight needs to be ready protect the weak d4 pawn } 7... Nf5 8. Nc2 Bb4+ 9. Bd2 Ncxd4?? 10. Nfxd4 Nxd4 11. Nxd4 Qxd4 12. Qa4+ Bd7 13. Qxb4 *
+
+

@@ -1,0 +1,97 @@
+[Event "How to CRUSH the Caro Kann: 2 knights overview"]
+[Site "https://lichess.org/study/IDZ8L3nv/iK5Fg5Kr"]
+[Result "*"]
+[UTCDate "2023.09.22"]
+[UTCTime "12:55:20"]
+[Variant "Standard"]
+[ECO "B10"]
+[Opening "Caro-Kann Defense: Two Knights Attack"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+
+1. e4 c6 2. Nf3 d5 3. Nc3 { The beginning of the 2 Knights Attack } 3... dxe4 (3... d4 { See Chapter 5 }) (3... Bg4 { See Chapter 6 }) (3... Nf6 { See Chapter 7 }) 4. Nxe4 Nf6 { "Tartakower" Variation (Levy's Recommendation) -- See chapters 3 and 4 } (4... Bf5? { The most common mistake of Caro Kann Players -- See Chapter 2 }) *
+
+
+[Event "How to CRUSH the Caro Kann: The Most Common Trap: Punish 4...Bf5?"]
+[Site "https://lichess.org/study/IDZ8L3nv/DSaEsbjQ"]
+[Result "*"]
+[UTCDate "2023.09.22"]
+[UTCTime "12:55:20"]
+[Variant "Standard"]
+[ECO "B10"]
+[Opening "Caro-Kann Defense: Two Knights Attack"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[ChapterMode "gamebook"]
+
+1. e4 c6 2. Nf3 (2. d4 d5 3. Nc3 dxe4 4. Nxe4 { [%csl Gf5][%cal Gc8f5] }) 2... d5 3. Nc3 dxe4 4. Nxe4 { [%csl Ge4] } 4... Bf5? { [%csl Gf5][%cal Gc8f5] } (4... Bg4 5. h3 { [%cal Gg4f3,Gd1f3] } 5... Bh5 6. Ng3 { [%cal Gg3h5] } 6... Bg6 7. h4 { transposes to mainline } 7... h6 8. Ne5 Bh7 9. Qh5 g6 10. Bc4) 5. Ng3 { [%csl Gf5] } 5... Bg6 6. h4 h6 (6... Nf6) 7. Ne5 { [%csl Gg6] } 7... Bh7 8. Qh5 g6 (8... Qd5 { White to move } 9. Bc4) (8... Nf6 9. Qxf7#) 9. Bc4 { oh no my queen! } { [%csl Rf7][%cal Gg6h5] } 9... e6 { [%csl Rf7][%cal Gh5f3,Gf3f7] } (9... gxh5 10. Bxf7#) 10. Qe2 (10. Qf3 Nf6) 10... Bg7 (10... Nf6 11. Nxf7 Kxf7 12. Qxe6+ Kg7 13. Qf7# { [%csl Gg7][%cal Gf7g7] }) (10... Qc7 11. d4 { [%csl Gc4,Ge5,Gg3,Rh7,Gc7][%cal Gc1f4,Gf4c7,Ge1c1] }) 11. Nxf7 Kxf7 12. Qxe6+ Kf8 13. Qf7# *
+
+
+[Event "How to CRUSH the Caro Kann: Tartakower: Smothered Mate Trap"]
+[Site "https://lichess.org/study/IDZ8L3nv/TxGAk61i"]
+[Result "*"]
+[UTCDate "2023.09.22"]
+[UTCTime "12:55:20"]
+[Variant "Standard"]
+[ECO "B10"]
+[Opening "Caro-Kann Defense: Two Knights Attack"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[ChapterMode "gamebook"]
+
+1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Qe2 (5. Nxf6+ exf6 { [%csl Gg8,Gf7,Gf6,Gg7,Gh7][%cal Gf8d6,Ge8g8] }) 5... Nbd7 { [%csl Rd7] } (5... Bf5 6. Nxf6+ gxf6 7. d3 { [%csl Gg3,Gf2,Gh2,Rf5,Gb3][%cal Gg2g3,Gf1g2,Ge1g1,Gh8g8,Gg8g2,Gf3h4,Gb2b3,Gc1b2,Gb2f6] }) (5... Nxe4 6. Qxe4 { See chapter 4 }) 6. Nd6# *
+
+
+[Event "How to CRUSH the Caro Kann: Tartakower: OH NO MY QUEEN"]
+[Site "https://lichess.org/study/IDZ8L3nv/FzpCYZ1b"]
+[Result "*"]
+[UTCDate "2023.09.22"]
+[UTCTime "12:55:20"]
+[Variant "Standard"]
+[ECO "B10"]
+[Opening "Caro-Kann Defense: Two Knights Attack"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[ChapterMode "gamebook"]
+
+1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 { [%csl Gf6][%cal Gg8f6] } 5. Qe2 Nxe4 6. Qxe4 Nd7 { [%csl Gf6,Re4][%cal Gd7f6] } 7. Bc4 Nf6 8. Ne5 { OH NO MY QUEEN } 8... e6 (8... Nxe4 9. Bxf7#) 9. Qe2 Bd6 10. d4 O-O { [%cal Ge1g1] } 11. Bg5 { [%csl Gc1][%cal Ge1c1] } 11... h6 12. h4 Be7 (12... hxg5 13. hxg5 { [%cal Gh1h8,Gf6d5,Gf6d7,Gf6h7,Ge2h5] } 13... Nh7 { [%csl Gh7][%cal Gf6d7,Gf6d5] } (13... Nd5 14. Qh5 { [%csl Gh8][%cal Gh5h8] }) 14. Qh5 Re8 { [%csl Gh7][%cal Gh5h7] } 15. Qxf7+ Kh8 16. Ng6# { [%cal Gh1h8,Gg6h8] }) 13. O-O-O { [%csl Gg4,Gf6,Ga5][%cal Gg2g4,Gg5f6,Gg4g5,Gd1g1,Gg1g8,Gd8a5] } 13... Qa5 14. g4 { [%csl Gf6,Gg5][%cal Gg5f6,Gg4g5] } *
+
+
+[Event "How to CRUSH the Caro Kann: EASY PLANS vs 3...d4"]
+[Site "https://lichess.org/study/IDZ8L3nv/GzG95Hdq"]
+[Result "*"]
+[UTCDate "2023.09.22"]
+[UTCTime "12:55:20"]
+[Variant "Standard"]
+[ECO "B10"]
+[Opening "Caro-Kann Defense: Two Knights Attack"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[ChapterMode "gamebook"]
+
+1. e4 c6 2. Nf3 d5 3. Nc3 d4 4. Ne2 c5 5. Ng3 { [%csl Gc4][%cal Gf1c4,Gd2d3,Ge1g1] } 5... Nc6 6. Bc4 e6 (6... e5 7. d3 Nf6? { [%cal Gf3g5] } 8. Ng5 Be6 9. Nxe6 fxe6 10. Bxe6 { [%cal Ge6c8,Ge6g8] }) 7. d3 Nf6 8. O-O a6 { [%csl Gb5][%cal Gb7b5] } 9. a4 Be7 10. Bd2 (10. Ng5) 10... O-O 11. Ng5 h6 12. Nh3 e5 13. f4 Bxh3 14. gxh3 { [%csl Gg8,Gh1,Gf5,Gc4][%cal Gg2g8,Gf2f8,Gg1h1,Gf1g1,Gd1e2,Ge2g2,Gf4f5,Gd2h6,Ga2g8] } *
+
+
+[Event "How to CRUSH the Caro Kann: CLEVER TRAPPY LINE vs 3...Bg4"]
+[Site "https://lichess.org/study/IDZ8L3nv/WaSnW7sK"]
+[Result "*"]
+[UTCDate "2023.09.22"]
+[UTCTime "12:55:20"]
+[Variant "Standard"]
+[ECO "B11"]
+[Opening "Caro-Kann Defense: Two Knights Attack, Mindeno Variation"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[ChapterMode "gamebook"]
+
+1. e4 c6 2. Nf3 d5 3. Nc3 Bg4 4. Be2!? { Check out Jonathan Schrantz's thorough video on this variation: https://youtu.be/3gocSY9dEKk } 4... e6 (4... d4? 5. Nxd4 Qxd4 (5... Bxe2 6. Ndxe2) 6. Bxg4) 5. O-O Nf6 (5... d4? 6. Nxd4) 6. h3 (6. e5 Nfd7 7. d4) 6... Bh5 (6... Bxf3 7. Bxf3) 7. Ne5 Bxe2 8. Qxe2 d4 (8... Bd6 9. d4) 9. Nb1 Bd6 10. Nxf7 Kxf7 11. e5 Bxe5 12. Qxe5 { [%csl Gf7,Gd3,Gg5][%cal Gd2d3,Gc1g5,Gb1d2,Gf1e1,Ge1e6] } *
+
+
+[Event "How to CRUSH the Caro Kann: AGGRESSIVE GAMBITS vs 3...Nf6"]
+[Site "https://lichess.org/study/IDZ8L3nv/duto4AKs"]
+[Result "*"]
+[UTCDate "2023.09.22"]
+[UTCTime "12:55:20"]
+[Variant "Standard"]
+[ECO "B10"]
+[Opening "Caro-Kann Defense: Two Knights Attack"]
+[Annotator "https://lichess.org/@/Ofir_Modai"]
+[ChapterMode "gamebook"]
+
+1. e4 c6 2. Nf3 d5 3. Nc3 Nf6 4. e5 Ne4 (4... Nfd7 5. e6! fxe6 6. d4 { [%csl Re6,Re7,Rd5,Rf8,Rd7,Rc8,Rb8] } 6... Nf6 7. Bd3 $16 g6 8. h4 Bg7 9. h5 Nxh5 10. g4 Nf6 11. Bh6 { [%csl Rg7,Rh6] } 11... Bxh6 12. Rxh6 Nxg4 13. Rh4 { [%csl Gg4,Gh8][%cal Gh4g4,Gd3g6,Gh4h8,Gf3e5] }) 5. Nxe4!? dxe4 6. Ng5 { [%csl Re5] } 6... Qd4 7. d3 exd3 8. Bxd3 Qxe5+ 9. Be3 { A fun gambit-style position, with lots of practical compensation for white! } 9... Qxb2 10. O-O *
+
+
