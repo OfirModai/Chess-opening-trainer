@@ -7,7 +7,7 @@ offline_book: [] = None
 
 def get_client_connection():
     global client
-    client = pymongo.MongoClient("mongodb+srv://ofir789987:8aErwSohMMzt4MAC@cluster0.loydmbr.mongodb.net/?retryWrites=true&w=majority") # enter here uri
+    client = pymongo.MongoClient() # enter here uri
     return client
 
 
