@@ -149,8 +149,10 @@ class Game:
                         self.state = self.state.father
                     elif element.name == 'forward' and 'options' in self.buttons.keys():
                         self.state = State(father=self.state, note=self.buttons['options'].get_option(0))
+                        self.decide_what_to_do()
                     elif element.name == 'options':
                         self.state = State(father=self.state, note=element.get_text_clicked(pygame.mouse.get_pos()))
+                        self.decide_what_to_do()
                     elif element.name == 'mode':
                         if element.text == 'organized trainer':
                             element.write('setting')
@@ -247,6 +249,7 @@ class Game:
             self.draw()
             if self.state.turn != self.state.view:
                 self.make_opponent_move()
+                self.decide_what_to_do()
         self.moves.clear()
         self.__update_options()
         self.__update_texts()
