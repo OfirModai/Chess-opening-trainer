@@ -168,7 +168,10 @@ class State:
         return None
 
     def has_comment(self):
-        return self.__memo_unit['comments'] != "click here to change commment" and len(self.__memo_unit['comments']) > 1
+        return self.__memo_unit['comments'] != "click here to add comment on the position" and len(self.__memo_unit['comments']) > 1
+
+    def has_meaningful_headline(self):
+        return not str(self.__memo_unit['headline'][0]).isnumeric()
 
     def __str__(self):
         return self.PGN
