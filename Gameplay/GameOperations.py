@@ -14,10 +14,9 @@ Board: pygame.Rect = None
 Recall = []
 
 
-
 def get_random(max_value):
     if max_value == 0: return 0
-    return random.randint(0, max_value-1)
+    return random.randint(0, max_value - 1)
 
 
 def set_starting_board(view):
@@ -59,6 +58,7 @@ def make_move_and_get_notation(origin, destination, pieces, view, kings, promoti
     result = ''
     delete_first = False
     piece = pieces[origin[0]][origin[1]]
+    turn = piece.color
     if piece.role == 'king' and abs(destination[1] - origin[1]) == 2:
         # castling
         result = 'O-O-O'
@@ -92,9 +92,28 @@ def make_move_and_get_notation(origin, destination, pieces, view, kings, promoti
             for p in line:
                 if p is not None and p.role == piece.role and p.color == piece.color and destination in p.get_possible_moves(
                         pieces):
+                    # this counting needs to reduce move that puts the king in check
                     options.append(p.position)
+        if len(options) > 1:
+            # checking for each option if it doesn't put the king in danger
+            to_remove = []
+            for option in options:
+                eaten_piece = pieces[destination[0]][destination[1]]
+                __move_piece(option, destination, pieces)
+                lost_pawn = None
+                if pieces[option[0]][option[1]] == 'pawn' and pieces[destination[0]][destination[1]]\
+                        is None and option[1] != destination[1]:
+                    # the pawn took en passant
+                    lost_pawn = pieces[option[0]][destination[1]]
+                    pieces[option[0]][destination[1]] = None
+                if kings[turn].is_attacked(pieces): to_remove.append(option)
+                # fixing the changes
+                if lost_pawn is not None: pieces[option[0]][destination[1]] = lost_pawn
+                __move_piece(destination, option, pieces)
+                pieces[destination[0]][destination[1]] = eaten_piece
+            for item in to_remove:
+                options.remove(item)
         if len(options) > 1 and piece.role != 'pawn':
-
             options.remove(origin)
             note = point_to_notation(origin, view)
             x, y = True, True
@@ -123,7 +142,6 @@ def make_move_and_get_notation(origin, destination, pieces, view, kings, promoti
             # the pawn took en passant
             pieces[origin[0]][destination[1]] = None
 
-    turn = pieces[origin[0]][origin[1]].color
     pieces[origin[0]][origin[1]] = None
     pieces[destination[0]][destination[1]] = piece
     piece.position = destination
@@ -188,6 +206,10 @@ def make_move_by_note_and_get_positions(note, pieces, view, turn):
                         destination in piece.get_possible_moves(pieces) and (
                         (x is None or piece.position[1] == x) and (y is None or piece.position[0] == y)):
                     origin = piece.position
+    if type(pieces[origin[0]][origin[1]]) is Pawn and origin[1] != destination[1] and(
+            pieces[destination[0]][destination[1]] is None):
+        # the pawn took en passant
+        pieces[origin[0]][destination[1]] = None
     __move_piece(origin, destination, pieces)
     if promote_to is not None:
         pieces[destination[0]][destination[1]] = promote_to
