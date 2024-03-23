@@ -15,9 +15,13 @@ def read(file_name: str):
     memo = {get_FEN_from_pieces(states[0].pieces, view): states[0]}
     lines = pgn.split('\n')
     current_headline = ''
+    starting_positions = []
     i = 0
     # concat lines of moves to get organized
     while i < len(lines):
+        # detect in which positions we ae on this book
+        if len(lines[i])>4 and lines[i][1:4] == 'FEN':
+            starting_positions.append(lines[i].split(' ')[1][1:])
         if lines[i] == '': lines.pop(i)
         elif lines[i][0] != '[' and i + 1 < len(lines) and lines[i + 1] != '' and lines[i + 1][0] != '[':
             lines[i] += lines[i + 1]
@@ -25,6 +29,7 @@ def read(file_name: str):
         else: i += 1
     for line in lines:
         if line[0] == '[':
+            # the moves start from some position, we find it
             if line[1:4] == 'FEN':
                 fen = line.split(' ')[1][1:]
                 states = None
@@ -34,9 +39,10 @@ def read(file_name: str):
                         break
                 if states is None:
                     raise Exception('FEN given with no previous position, can\'t assume the png')
+            # we get specified name for the variation
             elif line[1:6] == 'Event':
                 name = (line.split('\"')[1]).split(':')[1]
-                current_headline = f'{file_name} : {name}' if 'intro' not in name else ''
+                current_headline = f'{file_name} : {name}' if 'ntro' not in name else ''
         elif line != '\n':
             words = line.split(' ')
             while len(words) > 0:
@@ -75,8 +81,10 @@ def read(file_name: str):
                     move = clean_move(word)
                     if move != '':
                         states[-1] = State(father=states[-1], note=move)
+                        fen = get_FEN_from_pieces(states[-1].pieces, view)
                         if current_headline != '': states[-1].update_memo('headline', current_headline)
-                        memo[get_FEN_from_pieces(states[-1].pieces, view)] = states[-1]
+                        elif fen in starting_positions: states[-1].update_memo('headline', file_name)
+                        memo[fen] = states[-1]
                     for i in range(count):
                         states.pop()
                 elif word == '*':
@@ -86,8 +94,10 @@ def read(file_name: str):
                 else:
                     move = clean_move(word)
                     states[-1] = State(father=states[-1], note=move)
+                    fen = get_FEN_from_pieces(states[-1].pieces, view)
                     if current_headline != '': states[-1].update_memo('headline', current_headline)
-                    memo[get_FEN_from_pieces(states[-1].pieces, view)] = states[-1]
+                    elif fen in starting_positions: states[-1].update_memo('headline', file_name)
+                    memo[fen] = states[-1]
 
             states = [State(view=view)]
     reader.close()
