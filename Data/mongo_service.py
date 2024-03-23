@@ -7,7 +7,7 @@ offline_book: [] = None
 
 def get_client_connection():
     global client
-    f = open("C:\\Users\\Ofir Modei\\OneDrive\\Documents\\connecting_to_dataBase.txt", "r")
+    f = open("C:\\Users\\Ofir Modei\\OneDrive\\Documents\\projects\\Pycharm\\sensitive_data\\connecting_to_dataBase.txt", "r")
     client = pymongo.MongoClient((f.read())) # enter here uri
     return client
 
